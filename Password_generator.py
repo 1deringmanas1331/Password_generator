@@ -14,7 +14,7 @@ def generate_password(length=12, use_digits=True, use_special_chars=True):
    
     length = max(length, 4)
     
-   
+   #chooses random letters to be used in the password
     password = random.choices(characters, k=length)
     
     
