@@ -2,7 +2,7 @@ import random
 import string
 
 def generate_password(length=12, use_digits=True, use_special_chars=True):
-    
+    # Converts the string to lower case and upper case respectively
     lowercase_letters = string.ascii_lowercase
     uppercase_letters = string.ascii_uppercase
     digits = string.digits if use_digits else ''
@@ -17,7 +17,7 @@ def generate_password(length=12, use_digits=True, use_special_chars=True):
    #chooses random letters to be used in the password
     password = random.choices(characters, k=length)
     
-    
+   # Chooses 
     if use_digits:
         password.extend(random.choice(digits))
     if use_special_chars:
