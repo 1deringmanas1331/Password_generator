@@ -17,7 +17,7 @@ def generate_password(length=12, use_digits=True, use_special_chars=True):
    #chooses random letters to be used in the password
     password = random.choices(characters, k=length)
     
-   # Chooses 
+   # Chooses random digit for the password
     if use_digits:
         password.extend(random.choice(digits))
     if use_special_chars:
@@ -30,7 +30,7 @@ def generate_password(length=12, use_digits=True, use_special_chars=True):
     password = ''.join(password)
     
     return password
-
+# Finally it will generate the password using the above method
 if __name__ == "__main__":
   
     password = generate_password(length=16, use_digits=True, use_special_chars=True)
