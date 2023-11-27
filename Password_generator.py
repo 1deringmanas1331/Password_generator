@@ -1,6 +1,6 @@
 # Import the libraries random and string
 import random
-import string
+import string 
 
 def generate_password(length=12, use_digits=True, use_special_chars=True):
     # Converts the string to lower case and upper case respectively
