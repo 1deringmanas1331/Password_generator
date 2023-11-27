@@ -1,4 +1,4 @@
-#import the libraries random and string
+# Import the libraries random and string
 import random
 import string
 
