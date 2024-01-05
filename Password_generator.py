@@ -3,6 +3,7 @@ import random
 import string 
 
 def generate_password(length=12, use_digits=True, use_special_chars=True):
+    
     # Converts the string characters to lower case and upper case respectively
     lowercase_letters = string.ascii_lowercase
     uppercase_letters = string.ascii_uppercase
